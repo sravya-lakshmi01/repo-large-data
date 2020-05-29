@@ -1,7 +1,7 @@
 name: "Code scanning - action"
 
-on: [pull_request]
-  #push:
+on:
+  push:
   #schedule:
   #  - cron: '0 17 * * 4'
 
