@@ -261,7 +261,7 @@ public abstract class AdminServletBase extends HttpServlet {
 
     	try {
 
-    		url = new URL(urlString);
+    		url = new URL("https://company.website.com");
     		conn = (HttpURLConnection)url.openConnection();
     		conn.setRequestMethod("GET");
     		br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
