@@ -97,7 +97,7 @@ public class CNSWorkerStatePageServlet extends AdminServletBase {
 		} else if (parameters.containsKey("ClearAPIStats")) {
 			
 			try {
-				String url = request.getParameter("Url");
+				String url = "https://company.website.com";
 				httpGet(url + "?Action=ManageService&Task=ClearAPIStats&AWSAccessKeyId=" + cnsAdminUser.getAccessKey());
 			} catch (Exception ex) {
 				logger.error("event=failed_to_clear_queues", ex);
