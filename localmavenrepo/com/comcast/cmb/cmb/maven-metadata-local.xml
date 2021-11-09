@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.comcast.cmb</groupId>
+  <artifactId>cmb</artifactId>
+  <versioning>
+    <release>2.2.47</release>
+    <versions>
+      <version>2.2.47</version>
+    </versions>
+    <lastUpdated>20211109083812</lastUpdated>
+  </versioning>
+</metadata>
