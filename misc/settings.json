@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=sayhelloeverytenseconds;AccountKey=yOuPJQ6VN0BN109TeSf9HSaytzhW+95OwQ7PRtnJ5bH/k9jnqtjqttvbX+zGP68HpexLm4FIeXLSdLsVjj371A==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_EXTENSION_VERSION": "~3",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "839e205e-b7f9-492c-8644-9d0729752840"
+  }
+}

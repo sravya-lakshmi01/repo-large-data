@@ -1,0 +1,8 @@
+STRIPE_API_KEY="sk_live_devboxacct1DfwS2DlCIKljW"
+
+another repeat in same file sk_live_devboxacct1DfwS2DlCIKljW
+
+GOOGLE_API_KEY="AIzaSyDvc2t8M59jfDonZ1e4xG3wjFcCWHIN0yE"
+
+GOOGLE_API_KEY="AIzaSyDvc2t8N59jfDonZ1e4xG3wjFcCWHIN0yE"
+GOOGLE_API_KEY="AIzaSyDvc2t8N59jfDonZ1e4xG3wjFcCWHIN0yE"
