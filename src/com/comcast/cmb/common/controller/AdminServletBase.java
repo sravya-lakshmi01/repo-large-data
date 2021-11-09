@@ -177,7 +177,6 @@ public abstract class AdminServletBase extends HttpServlet {
 
     	out.println("<head>");
     	out.println("<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>");
-    	out.println("<title>CMB Admin - " + title + "</title>");
     	
     	//out.println("<link rel='stylesheet' type='text/css' href='/global.css'/>");
     	
