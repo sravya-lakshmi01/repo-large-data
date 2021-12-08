@@ -51,6 +51,7 @@ import com.comcast.cqs.model.CQSMessage;
 import com.comcast.cqs.model.CQSMessageAttribute;
 import com.comcast.cqs.model.CQSQueue;
 import com.comcast.cqs.util.Util;
+import java.io.ByteArrayInputStream;
 
 public class CQSHandler {
 	
@@ -263,6 +264,18 @@ public class CQSHandler {
             }
         }
     }
+
+	public static void checkXml(String xml){
+		javax.xml.parsers.SAXParserFactory fac = new org.apache.xerces.jaxp.SAXParserFactoryImpl();
+		javax.xml.parsers.SAXParser saxParser;
+
+		try {
+			saxParser = fac.newSAXParser();
+			saxParser.parse(new ByteArrayInputStream(xml.getBytes()), null);
+		} catch (Exception ex) {
+			logger.error("Exception parsing", ex);
+		}
+	}
     
     public static boolean doesQueueNotExist(Exception ex) {
 
