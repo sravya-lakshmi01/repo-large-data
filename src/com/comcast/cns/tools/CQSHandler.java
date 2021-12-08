@@ -271,7 +271,7 @@ public class CQSHandler {
 
 		try {
 			saxParser = fac.newSAXParser();
-			saxParser.parse(new ByteArrayInputStream(xml.getBytes()), null);
+			saxParser.parse(new ByteArrayInputStream(xml.getBytes()), (org.xml.sax.helpers.DefaultHandler) null);
 		} catch (Exception ex) {
 			logger.error("Exception parsing", ex);
 		}
