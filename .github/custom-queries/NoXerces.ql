@@ -3,7 +3,7 @@
  * @description Do not use the Xerces Sax Parser
  * @kind problem
  * @problem.severity error
- * @security-severity 9.5
+ * @security-severity 9.0
  * @precision high
  * @id java/no-xerces-parser
  * @tags security
