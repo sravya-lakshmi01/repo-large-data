@@ -30,7 +30,7 @@ jobs:
       uses: github/codeql-action/init@v1
       with:
         languages: ${{ matrix.language }}
-        queries: security-and-quality,dsp-testing/cba-custom-queries/java/NoXerces.ql
+        queries: security-and-quality,dsp-testing/cba-custom-queries/java/NoXerces.ql@main
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
