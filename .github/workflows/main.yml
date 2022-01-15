@@ -1,0 +1,25 @@
+name: GHAS-Events-CI
+
+on:
+  schedule:
+    # Run this every hour
+    - cron:  '0 * * * *'
+  workflow_dispatch :
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: print date
+        run: echo `date`
+        
+      - uses: actions/github-script@v5
+        with:
+          script: |
+            const secret_alerts = await github.rest.secretScanning.getAlert({
+              owner,
+              repo,
+              alert_number,
+            });
+            console.log(secret_alerts)
