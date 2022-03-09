@@ -23,6 +23,7 @@
           <version>5.1.2</version>
           <scope>test</scope>
       </dependency>
+
 	
 	<dependency>
 	  <groupId>org.apache.logging.log4j</groupId>
@@ -58,8 +59,7 @@
           <version>2.2.22</version>
           <scope>test</scope>
       </dependency>
-    
-    
+		
       <dependency>
           <groupId>com.sparkjava</groupId>
           <artifactId>spark-core</artifactId>
