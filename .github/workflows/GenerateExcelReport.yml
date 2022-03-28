@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        repos: [ 'amitgupta7/ghas-reports-action', 'dsp-testing/ghas-intro-6' ]
+        repos: [ 'dsp-testing/verdaccio', 'dsp-testing/ghas-intro-6' ]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Generate issues and save results
