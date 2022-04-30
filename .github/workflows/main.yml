@@ -1,0 +1,40 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Test
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  INPUT_TOKEN: ${{ secrets.TOKEN }}
+  GITHUB_ORG: dsp-testing
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+        with:
+          repository: amitgupta7/node-async
+        
+
+      # Runs a single command using the runners shell
+      - name: build and run script
+        run: |
+          npm install 
+          npm run build
+          npm run package 
+          node dist/index.js
+
+      - uses: actions/upload-artifact@v3.0.0
+        with:
+          name: results
+          path: ./**/*.xlsx  
