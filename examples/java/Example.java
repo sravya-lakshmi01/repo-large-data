@@ -108,6 +108,7 @@ public class Example {
             
             BasicAWSCredentials user2Credentials = new BasicAWSCredentials("<access_key>", "<secret_key>");
 
+			String pwdkey="4856392759690";
             // service urls
             
             //TODO: add service URLs
